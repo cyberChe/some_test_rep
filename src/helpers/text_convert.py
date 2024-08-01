@@ -10,9 +10,12 @@ def convert_message(source_text: Row) -> str:
     review_datetime = source_text[5].strftime("%d.%m.%Y")
     
     message = f"Артикул: {article}\n"\
+        "\n"\
         f"Наименование: {name}\n"\
         f"Ссылка на товар: {link}\n"\
+        "\n"\
         f"Оценка: {rating}\n"\
+        "\n"\
         f"Текст отзыва: {review_text}\n"\
         f"Дата отзыва: {review_datetime}"
         

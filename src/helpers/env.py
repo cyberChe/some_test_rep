@@ -14,3 +14,9 @@ def get_db_env_vars() -> dict:
 		'db_password' : getenv('db_password'),
 		'db_user' : getenv('db_user'),
 	}
+ 
+def get_telegram_env_vars() -> dict:
+    return {
+		'bot_api_token': getenv('tg_bot_api_key'),
+		'chat_id': getenv('tg_chat_id'),
+	}
