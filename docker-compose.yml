@@ -1,6 +1,6 @@
 services:
 
-  yandex:
+  review_telegram_notify:
     container_name: review_telegram_notify
     build:
       context: "./"
