@@ -4,12 +4,4 @@ services:
     container_name: review_telegram_notify
     build:
       context: "./"
-    tty: true
-    volumes:
-      - ./src:/app/
-    networks:
-      - default
 
-networks:
-  default:
-    driver: bridge
