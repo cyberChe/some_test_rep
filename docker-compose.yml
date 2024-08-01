@@ -4,4 +4,5 @@ services:
     container_name: review_telegram_notify
     build:
       context: "./"
-
+    environment:
+      TZ: "Europe/Moscow"
